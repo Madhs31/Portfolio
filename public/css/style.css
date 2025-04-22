@@ -102,7 +102,10 @@
     60%  { width: 0ch; }   /* apaga */
     100% { width: 9ch; }   /* espera antes de reiniciar */
   }
-  
+  p {
+    text-indent: 30px;
+    text-align: justify;
+}
 
 /* SECTION SKILLS - VISUAL RETRÔ COM ANIMAÇÃO */
 .section-3 {
