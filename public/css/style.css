@@ -51,20 +51,58 @@
 
   }
  
-  
   .caixa-de-texto {
     position: absolute;
-    top: 20%;
-    left: 40%; /* Começa mais à esquerda */
+    top: 13%;
+    left: 40%;
     right: 10%;
-    background-color: rgba(40, 30, 175, 0.519);
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: left;
+    background: rgba(20, 20, 60, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
     font-family: 'Permanent Marker', cursive;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease-in-out;
   }
+
+  .caixa-de-texto p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .caixa-de-texto a.button {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #5f67ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .caixa-de-texto a.button:hover {
+    background-color: #3d44cc;
+  }
+  .typewriter {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typingLoop 5s steps(9, end) infinite;
+  }
+  
+  @keyframes typingLoop {
+    0%   { width: 0ch; }
+    20%  { width: 9ch; }   /* digita */
+    40%  { width: 9ch; }   /* pausa */
+    60%  { width: 0ch; }   /* apaga */
+    100% { width: 9ch; }   /* espera antes de reiniciar */
+  }
+  
 
 /* SECTION SKILLS - VISUAL RETRÔ COM ANIMAÇÃO */
 .section-3 {
