@@ -1,0 +1,44 @@
+<%- include('partials/header') %>
+
+<section class="section-4" id="projetos">
+  <div class="container">
+    <div class="section-title has-text-centered" style="margin-bottom: 30px;">
+      <h2 class="title is-2" style="color: #fff;">Projetos</h2>
+    </div>
+
+    <div class="has-text-centered" style="margin-bottom: 20px; width: 1000px;">
+      <a href="/projects/new" class="button custom-purple is-fullwidth" style="border-radius: 5px;">
+        + Adicionar Projeto
+      </a>
+    </div>
+
+    <ul class="list">
+      <% if (projects && projects.length > 0) { %>
+        <% projects.forEach(project => { %>
+          <li class="box" style="margin-bottom: 20px;">
+            <h2 class="subtitle" style="color: #333; font-weight: 700;"><%= project.title %></h2>
+            <p style="color: #555; line-height: 1.5; margin-bottom: 15px;"><%= project.description %></p>
+
+            <div class="buttons">
+              <a href="<%= project.link %>" target="_blank" class="button is-info">
+                Ver Projeto
+              </a>
+              <a href="/projects/edit/<%= project.id %>" class="button is-warning">
+                Editar
+              </a>
+              <form action="/projects/delete/<%= project.id %>" method="POST" style="display: inline;">
+                <button type="submit" class="button is-danger">
+                  Excluir
+                </button>
+              </form>
+            </div>
+          </li>
+        <% }) %>
+      <% } else { %>
+        <li style="color: #fff;">Nenhum projeto encontrado.</li>
+      <% } %>
+    </ul>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

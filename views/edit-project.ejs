@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+
+<section class="section-4" id="projetos">
+  <div class="container">
+    <div class="section-title has-text-centered" style="margin-bottom: 30px;">
+      <h2 class="title is-2">Editar Projeto</h2>
+    </div>
+
+    <form action="/projects/update/<%= project.id %>" method="POST" class="box" style="padding: 20px; border-radius: 8px; width: 1000px;">
+      
+      <div class="field">
+        <label class="label">Título</label>
+        <div class="control">
+          <input type="text" name="title" value="<%= project.title %>" required class="input" style="border-radius: 4px;">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Linguagens Utilizadas</label>
+        <div class="control">
+          <input type="text" name="tech" value="<%= project.tech %>" required class="input" style="border-radius: 4px;">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Descrição</label>
+        <div class="control">
+          <textarea name="description" rows="5" class="textarea" style="border-radius: 4px;"><%= project.description %></textarea>
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Link do Projeto</label>
+        <div class="control">
+          <input type="text" name="link" value="<%= project.link %>" class="input" style="border-radius: 4px;">
+        </div>
+      </div>
+      
+      <div class="field">
+        <div class="control">
+          <button type="submit" class="button custom-purple is-fullwidth" style="border-radius: 5px;">
+            Atualizar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

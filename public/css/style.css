@@ -248,114 +248,15 @@
   text-shadow: 2px 2px 0 #000;
   font-family: "Permanent Marker", cursive;
 }
-
-.card-grid {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 1400px; /* Aumentando o max-width para acomodar cards maiores */
+.custom-purple {
+  background-color: #483d8b; /* Cor roxa */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda padrão */
 }
 
-.card {
-  width: 380px; /* Aumentando a largura do card */
-  height: 500px; /* Aumentando a altura do card */
-  perspective: 1000px;
-  background: transparent;
-}
-
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  font-family: 'Courier New', monospace;;
-  width: 100%;
-  height: 100%;
-  background: white;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-.card-front {
-  z-index: 2;
-}
-
-.card-back {
-  transform: rotateY(180deg);
-  justify-content: center;
-  gap: 1rem;
-  text-align: center;
-}
-
-.card-front img {
-  width: 100%;
-  height: 240px;
-  object-fit: contain;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  background-color: #f9f9f9;
-}
-
-.card-front h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #222;
-  text-align: center;
-}
-
-.card-back h3 {
-  color: #222;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-.tag {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  font-weight: bold;
-}
-
-.btn {
-  background-color: #111;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.4rem;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #333;
+.custom-purple:hover {
+  background-color: #483d8b; /* Cor roxa mais escura ao passar o mouse */
+  color: #eee;
 }
 
 .section-5 {
@@ -459,4 +360,19 @@
   color: #121212;
   transform: scale(1.1);
   box-shadow: 0 0 10px #8a2be2;
+}
+
+.btn {
+  background-color: #111;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #eee;
 }
