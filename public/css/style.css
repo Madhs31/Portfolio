@@ -259,6 +259,34 @@
   color: #eee;
 }
 
+.button.is-purple-1 {
+  background-color: #b39ddb; /* Roxo claro */
+  color: white;
+  border: none;
+}
+.button.is-purple-1:hover {
+  background-color: #9575cd;
+}
+
+.button.is-purple-2 {
+  background-color: #7e57c2; /* Roxo médio */
+  color: white;
+  border: none;
+}
+.button.is-purple-2:hover {
+  background-color: #673ab7;
+}
+
+.button.is-purple-3 {
+  background-color: #5e35b1; /* Roxo escuro */
+  color: white;
+  border: none;
+}
+.button.is-purple-3:hover {
+  background-color: #4527a0;
+}
+
+
 .section-5 {
   background-color: #121212;
   color: #eee;

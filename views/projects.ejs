@@ -6,7 +6,7 @@
       <h2 class="title is-2" style="color: #fff;">Projetos</h2>
     </div>
 
-    <div class="has-text-centered" style="margin-bottom: 20px; width: 1000px;">
+    <div class="has-text-centered" style="margin-bottom: 20px; width: 1345px;">
       <a href="/projects/new" class="button custom-purple is-fullwidth" style="border-radius: 5px;">
         + Adicionar Projeto
       </a>
@@ -18,20 +18,22 @@
           <li class="box" style="margin-bottom: 20px;">
             <h2 class="subtitle" style="color: #333; font-weight: 700;"><%= project.title %></h2>
             <p style="color: #555; line-height: 1.5; margin-bottom: 15px;"><%= project.description %></p>
+            <p style="color: #483d8b; line-height: 1.5; margin-bottom: 15px;"><%= project.tech %></p>
 
             <div class="buttons">
-              <a href="<%= project.link %>" target="_blank" class="button is-info">
+              <a href="<%= project.link %>" target="_blank" class="button is-purple-1">
                 Ver Projeto
               </a>
-              <a href="/projects/edit/<%= project.id %>" class="button is-warning">
+              <a href="/projects/edit/<%= project.id %>" class="button is-purple-2">
                 Editar
               </a>
               <form action="/projects/delete/<%= project.id %>" method="POST" style="display: inline;">
-                <button type="submit" class="button is-danger">
+                <button type="submit" class="button is-purple-3">
                   Excluir
                 </button>
               </form>
             </div>
+
           </li>
         <% }) %>
       <% } else { %>
