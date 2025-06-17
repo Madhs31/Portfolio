@@ -1,4 +1,3 @@
-<%# Cabeçalho(nav, title) %>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,31 +10,28 @@
   <!-- Estilo customizado -->
   <link rel="stylesheet" href="/css/style.css">
 
+  <!-- Google Fonts & Font Awesome -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Ícone da aba -->
+  <link rel="shortcut icon" href="/images/icon.ico">
 
   <style>
-    /* Garante que a navbar seja completamente transparente */
     .navbar.is-transparent {
       background-color: transparent !important;
       box-shadow: none;
     }
   </style>
-<link rel="shortcut icon" href="/images/icon.ico">
 </head>
+
 <body>
   <header>
     <!-- Navbar -->
     <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-
-        <!-- Botão hamburguer -->
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -54,38 +50,37 @@
       </div>
     </nav>
 
-    <!-- Imagem --> 
+    <!-- Seção Home -->
     <section class="section-1" id="home">
       <img src="/images/portfolio.jpg" alt="Imagem de capa do portfólio" class="hero-image">
     </section>
 
-    <!-- Sobre Mim --> 
+    <!-- Seção Sobre Mim -->
     <section class="section-2" id="sobre" style="position: relative;">
-      <img src="/images/sobremim.jpg" alt="Imagem de capa do portfólio" class="hero-image2" >
-    
+      <img src="/images/sobremim.jpg" alt="Imagem sobre mim" class="hero-image2">
+
       <div class="caixa-de-texto">
         <h1 class="typewriter">Sobre Mim</h1>
-
         <p>Olá! Sou Maria Fernanda, estudante do 3º semestre de Análise e Desenvolvimento de Sistemas. Tive a oportunidade de cursar o 2º semestre de Ciências da Computação, mas quando surgiu a chance de ingressar na Fatec, não pensei duas vezes.</p>
         <p>Desde a infância, sempre fui fascinada por tudo ao meu redor, especialmente pela tecnologia. Mesmo quando ainda não era tão acessível como hoje, ela sempre me pareceu algo mágico e transformador.</p>
         <p>Tenho experiência no desenvolvimento web (HTML, CSS, JavaScript) e estou expandindo meus conhecimentos no universo do back-end. Acredito no poder de criar sistemas que sejam não apenas funcionais, mas também intuitivos e capazes de melhorar a vida das pessoas.</p>
         <p>Atualmente, busco novas oportunidades para crescer como desenvolvedora e contribuir em projetos desafiadores. Gosto de enfrentar desafios que me permitam aprender e evoluir constantemente em minha jornada profissional.</p>
 
         <a href="/CV/Curriculo - Maria Fernanda.pdf" download
-          class="button is-link is-medium is-rounded has-text-weight-semibold">
+           class="button is-link is-medium is-rounded has-text-weight-semibold">
           <i class="fa-solid fa-file-arrow-down"></i>
           &nbsp;Download CV
         </a>
       </div>
     </section>
-    
-    <!-- Habilidades --> 
+
+    <!-- Seção Habilidades -->
     <section class="section-3" id="skills">
       <div class="skills-section">
         <h2>Habilidades</h2>
-    
+
         <div class="skills-columns">
-          <!-- FRONT-END -->
+          <!-- Front-end -->
           <div class="skills-group">
             <h3>✨ Front-end</h3>
             <div class="skills-list">
@@ -96,20 +91,20 @@
               <span class="skill">Tailwind</span>
             </div>
           </div>
-    
-          <!-- BACK-END -->
+
+          <!-- Back-end -->
           <div class="skills-group">
             <h3>💻 Back-end</h3>
             <div class="skills-list">
               <span class="skill">Express</span>
               <span class="skill">Java</span>
-              <span class="skill">MYSQL</span>
+              <span class="skill">MySQL</span>
               <span class="skill">Node.js</span>
               <span class="skill">Python</span>
             </div>
           </div>
-    
-          <!-- FERRAMENTAS -->
+
+          <!-- Ferramentas -->
           <div class="skills-group">
             <h3>🧰 Ferramentas</h3>
             <div class="skills-list">
@@ -122,5 +117,6 @@
         </div>
       </div>
     </section>
-    
   </header>
+</body>
+</html>

@@ -5,39 +5,39 @@
     <div class="section-title has-text-centered" style="margin-bottom: 30px;">
       <h2 class="title is-2" style="color: #fff;">Novo Projeto</h2>
     </div>
-    
-    <form action="/projects" method="POST" class="box" style="padding: 20px; border-radius: 8px; width: 1000px;">
+
+    <form action="/projects" method="POST" class="box" style="padding: 20px; border-radius: 8px; width: 1000px;" id="newProjectForm">
       <div class="field">
         <label class="label">Título</label>
         <div class="control">
           <input type="text" name="title" placeholder="Título" required class="input" style="border-radius: 4px;">
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Linguagens Utilizadas</label>
         <div class="control">
           <input type="text" name="tech" placeholder="Ex: HTML, CSS, JS" class="input" style="border-radius: 4px;">
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Descrição</label>
         <div class="control">
           <textarea name="description" placeholder="Descrição" rows="5" class="textarea" style="border-radius: 4px;"></textarea>
         </div>
       </div>
-      
+
       <div class="field">
         <label class="label">Link do Projeto</label>
         <div class="control">
           <input type="text" name="link" placeholder="Link do projeto" class="input" style="border-radius: 4px;">
         </div>
       </div>
-      
+
       <div class="field">
         <div class="control">
-          <button type="submit" class="button custom-purple is-fullwidth" style="border-radius: 5px;">
+          <button type="submit" class="button custom-purple is-fullwidth" style="border-radius: 5px;" id="submitButton">
             Salvar
           </button>
         </div>
@@ -47,3 +47,12 @@
 </section>
 
 <%- include('partials/footer') %>
+
+<script>
+  // Adiciona um listener para o evento 'submit' do formulário
+  document.getElementById('newProjectForm').addEventListener('submit', function() {
+    // Desabilita o botão de envio para prevenir múltiplos cliques
+    document.getElementById('submitButton').disabled = true;
+    document.getElementById('submitButton').innerText = 'Salvando...'; // Opcional: muda o texto do botão
+  });
+</script>
